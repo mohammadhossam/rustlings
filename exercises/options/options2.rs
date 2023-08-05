@@ -1,5 +1,7 @@
 // options2.rs
-// Execute `rustlings hint options2` or use the `hint` watch subcommand for a hint.
+//
+// Execute `rustlings hint options2` or use the `hint` watch subcommand for a
+// hint.
 
 
 #[cfg(test)]
@@ -26,9 +28,16 @@ mod tests {
 
         let mut cursor = range;
 
+<<<<<<< HEAD
         // TODO: make this a while let statement - remember that vector.pop also adds another layer of Option<T>
         // You can stack `Option<T>`s into while let and if let
         while let Some(Some(integer)) = optional_integers.pop() {
+=======
+        // TODO: make this a while let statement - remember that vector.pop also
+        // adds another layer of Option<T>. You can stack `Option<T>`s into
+        // while let and if let.
+        integer = optional_integers.pop() {
+>>>>>>> myfork/main
             assert_eq!(integer, cursor);
             cursor -= 1;
         }
